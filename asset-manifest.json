@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/yazcodes-portfolio/static/css/main.4b320513.css",
-    "main.js": "/yazcodes-portfolio/static/js/main.3d6e933c.js",
-    "static/media/digitalCamPink.jpg": "/yazcodes-portfolio/static/media/digitalCamPink.423cb02cdcab083bd34d.jpg",
+    "main.css": "/yazcodes-portfolio/static/css/main.c7ec0e23.css",
+    "main.js": "/yazcodes-portfolio/static/js/main.75647aba.js",
+    "static/media/digitalCamFrontEdited.jpg": "/yazcodes-portfolio/static/media/digitalCamFrontEdited.66b2eeb2afe59591ab40.jpg",
+    "static/media/digitalCamBack.jpg": "/yazcodes-portfolio/static/media/digitalCamBack.f5a05471ad6125f63c57.jpg",
     "index.html": "/yazcodes-portfolio/index.html",
-    "main.4b320513.css.map": "/yazcodes-portfolio/static/css/main.4b320513.css.map",
-    "main.3d6e933c.js.map": "/yazcodes-portfolio/static/js/main.3d6e933c.js.map"
+    "main.c7ec0e23.css.map": "/yazcodes-portfolio/static/css/main.c7ec0e23.css.map",
+    "main.75647aba.js.map": "/yazcodes-portfolio/static/js/main.75647aba.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b320513.css",
-    "static/js/main.3d6e933c.js"
+    "static/css/main.c7ec0e23.css",
+    "static/js/main.75647aba.js"
   ]
 }
