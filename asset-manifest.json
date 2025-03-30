@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/yazcodes-portfolio/static/css/main.65606909.css",
-    "main.js": "/yazcodes-portfolio/static/js/main.1e731bc9.js",
+    "main.js": "/yazcodes-portfolio/static/js/main.c738a53d.js",
     "static/media/digitalCamFrontEdited.png": "/yazcodes-portfolio/static/media/digitalCamFrontEdited.c897a42bdf9045c5a55d.png",
+    "static/media/youcode.png": "/yazcodes-portfolio/static/media/youcode.9ef6c2fe698451222819.png",
     "static/media/digitalCamBack.jpg": "/yazcodes-portfolio/static/media/digitalCamBack.f5a05471ad6125f63c57.jpg",
     "index.html": "/yazcodes-portfolio/index.html",
     "main.65606909.css.map": "/yazcodes-portfolio/static/css/main.65606909.css.map",
-    "main.1e731bc9.js.map": "/yazcodes-portfolio/static/js/main.1e731bc9.js.map"
+    "main.c738a53d.js.map": "/yazcodes-portfolio/static/js/main.c738a53d.js.map"
   },
   "entrypoints": [
     "static/css/main.65606909.css",
-    "static/js/main.1e731bc9.js"
+    "static/js/main.c738a53d.js"
   ]
 }
