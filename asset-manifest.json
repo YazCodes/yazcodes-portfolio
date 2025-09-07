@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/yazcodes-portfolio/static/css/main.2bd4f17b.css",
-    "main.js": "/yazcodes-portfolio/static/js/main.399e540b.js",
+    "main.js": "/yazcodes-portfolio/static/js/main.cfcd29d7.js",
     "static/media/thankYou.mp4": "/yazcodes-portfolio/static/media/thankYou.e013f84a3a691d7e380f.mp4",
     "static/media/techProjects.pdf": "/yazcodes-portfolio/static/media/techProjects.4810ab5d8cbdc59ad5a1.pdf",
     "static/media/tamagotchiEdited.png": "/yazcodes-portfolio/static/media/tamagotchiEdited.3fefcd4a48d386a43948.png",
@@ -10,15 +10,16 @@
     "static/media/digitalCamFrontEdited.png": "/yazcodes-portfolio/static/media/digitalCamFrontEdited.c897a42bdf9045c5a55d.png",
     "static/media/techStack.png": "/yazcodes-portfolio/static/media/techStack.e6024d6ea1e4f92141a2.png",
     "static/media/UIUXdev.png": "/yazcodes-portfolio/static/media/UIUXdev.9401bcb0c57535efd689.png",
+    "static/media/codingMusic.png": "/yazcodes-portfolio/static/media/codingMusic.37526657870ed22850bb.png",
     "static/media/portfolioContactInfo.mp4": "/yazcodes-portfolio/static/media/portfolioContactInfo.7a103ed6bbc6661f35e5.mp4",
     "static/media/digitalCamBack.jpg": "/yazcodes-portfolio/static/media/digitalCamBack.f5a05471ad6125f63c57.jpg",
     "static/media/folder.png": "/yazcodes-portfolio/static/media/folder.ce551e94cfb11116b9e5.png",
     "index.html": "/yazcodes-portfolio/index.html",
     "main.2bd4f17b.css.map": "/yazcodes-portfolio/static/css/main.2bd4f17b.css.map",
-    "main.399e540b.js.map": "/yazcodes-portfolio/static/js/main.399e540b.js.map"
+    "main.cfcd29d7.js.map": "/yazcodes-portfolio/static/js/main.cfcd29d7.js.map"
   },
   "entrypoints": [
     "static/css/main.2bd4f17b.css",
-    "static/js/main.399e540b.js"
+    "static/js/main.cfcd29d7.js"
   ]
 }
