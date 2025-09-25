@@ -1,25 +1,37 @@
 {
   "files": {
-    "main.css": "/yazcodes-portfolio/static/css/main.2bd4f17b.css",
-    "main.js": "/yazcodes-portfolio/static/js/main.7b7a53f7.js",
+    "main.css": "/yazcodes-portfolio/static/css/main.aa4e4ff2.css",
+    "main.js": "/yazcodes-portfolio/static/js/main.79f92dda.js",
     "static/media/thankYou.mp4": "/yazcodes-portfolio/static/media/thankYou.e013f84a3a691d7e380f.mp4",
+    "static/media/bow1.png": "/yazcodes-portfolio/static/media/bow1.b3fe867ba7b913bd9559.png",
     "static/media/techProjects.pdf": "/yazcodes-portfolio/static/media/techProjects.4810ab5d8cbdc59ad5a1.pdf",
     "static/media/tamagotchiEdited.png": "/yazcodes-portfolio/static/media/tamagotchiEdited.3fefcd4a48d386a43948.png",
+    "static/media/gameBackground.png": "/yazcodes-portfolio/static/media/gameBackground.e14c1900e0e0e2717e4e.png",
     "static/media/backDigiCam.png": "/yazcodes-portfolio/static/media/backDigiCam.1403cfc245001b4d110f.png",
+    "static/media/outfit1.png": "/yazcodes-portfolio/static/media/outfit1.2b6e9cf358afa756e892.png",
+    "static/media/outfit2.png": "/yazcodes-portfolio/static/media/outfit2.5f1afe6f6cd0289dca6f.png",
     "static/media/teachingPost.png": "/yazcodes-portfolio/static/media/teachingPost.896d12a5b100c7fc15ea.png",
     "static/media/digitalCamFrontEdited.png": "/yazcodes-portfolio/static/media/digitalCamFrontEdited.c897a42bdf9045c5a55d.png",
     "static/media/techStack.png": "/yazcodes-portfolio/static/media/techStack.e6024d6ea1e4f92141a2.png",
     "static/media/UIUXdev.png": "/yazcodes-portfolio/static/media/UIUXdev.9401bcb0c57535efd689.png",
+    "static/media/outfit5.png": "/yazcodes-portfolio/static/media/outfit5.fe8bf1f902ab8e6149ae.png",
+    "static/media/bow2.png": "/yazcodes-portfolio/static/media/bow2.1034af2db403f5638798.png",
+    "static/media/bow3.png": "/yazcodes-portfolio/static/media/bow3.80b6bece82e10d12e13a.png",
+    "static/media/base.png": "/yazcodes-portfolio/static/media/base.a76aadef89c5b36e7555.png",
+    "static/media/hairclips.png": "/yazcodes-portfolio/static/media/hairclips.a2c146db9e67185cb1ed.png",
     "static/media/codingMusic.png": "/yazcodes-portfolio/static/media/codingMusic.37526657870ed22850bb.png",
+    "static/media/outfit4.png": "/yazcodes-portfolio/static/media/outfit4.dd80341da654c091bd4d.png",
+    "static/media/outfit3.png": "/yazcodes-portfolio/static/media/outfit3.25ca227f216fcab5b6a5.png",
     "static/media/portfolioContactInfo.mp4": "/yazcodes-portfolio/static/media/portfolioContactInfo.7a103ed6bbc6661f35e5.mp4",
-    "static/media/digitalCamBack.jpg": "/yazcodes-portfolio/static/media/digitalCamBack.f5a05471ad6125f63c57.jpg",
+    "static/media/shoe1.png": "/yazcodes-portfolio/static/media/shoe1.c037856b1656c26bed59.png",
+    "static/media/shoe2.png": "/yazcodes-portfolio/static/media/shoe2.bbbaa781a4cd4740d107.png",
     "static/media/folder.png": "/yazcodes-portfolio/static/media/folder.ce551e94cfb11116b9e5.png",
     "index.html": "/yazcodes-portfolio/index.html",
-    "main.2bd4f17b.css.map": "/yazcodes-portfolio/static/css/main.2bd4f17b.css.map",
-    "main.7b7a53f7.js.map": "/yazcodes-portfolio/static/js/main.7b7a53f7.js.map"
+    "main.aa4e4ff2.css.map": "/yazcodes-portfolio/static/css/main.aa4e4ff2.css.map",
+    "main.79f92dda.js.map": "/yazcodes-portfolio/static/js/main.79f92dda.js.map"
   },
   "entrypoints": [
-    "static/css/main.2bd4f17b.css",
-    "static/js/main.7b7a53f7.js"
+    "static/css/main.aa4e4ff2.css",
+    "static/js/main.79f92dda.js"
   ]
 }
