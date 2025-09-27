@@ -22,6 +22,7 @@ function App() {
   return (
     <div className="container">
       <h1 className="homepage-heading">.𖥔 ݁ Yasmin's tech portfolio ˖ ♡</h1>
+       <h3>Hi! i'm a creative technologist i blend tech, creative design and fashion to build innovative, interactive, and artistic digital experiences for everyone ♡.</h3>
 
       <div className="folder-bar">
         {[
