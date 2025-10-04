@@ -39,40 +39,47 @@
 
 .buttons {
   position: absolute;
-  bottom: 20px; 
+  bottom: 70px; 
   left: 50%;
   transform: translateX(-50%);
-  gap: 20px; 
-  z-index: 10;   
+  display: flex;
+  gap: 20px;
+  z-index: 10;
 }
-
 
 .buttons button {
-  background: #e599cf; 
-  color: #000;
-  font-family: Tahoma, Verdana, sans-serif;
-  font-size: 12px;
-  padding: 6px 12px;
-
-  border: 2px solid #6bbae4; 
-  border-radius: 3px; 
-  box-shadow: inset -2px -2px 3px #ffffff, inset 2px 2px 3px #a0a0a0;
+  background: none;
+  border: none;
   cursor: pointer;
-
-  transition: all 0.15s ease-in-out;
+  padding: 0;
+  transition: transform 0.2s ease;
 }
 
+
 .buttons button:hover {
-  background: linear-gradient(145deg, #66ccff, #ff66cc); 
-  transform: translateY(-3px);
-  box-shadow: 6px 6px 0px #000;
+  transform: translateY(-5px) scale(1.05);
 }
 
 .buttons button:active {
   transform: translateY(2px);
-  box-shadow: 2px 2px 0px #000;
 }
 
+.outfit-btn img {
+  width: 90px;  
+  left: -100px; 
+  top: -15px;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+.bow-btn img {
+  width: 50px;  
+  left:  40px; 
+  top: 9px;
+
+  height: auto;
+  image-rendering: pixelated;
+}
 
 .outfit {
   position: absolute;     
@@ -103,8 +110,22 @@
 }
 
 
+.happiness-bar-container {
+  position: absolute;
+  top: 1225px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 20px;
+  background-color: #ccc;
+  border: 2px solid #999;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 999;
+}
 
-
-
-
-
+.happiness-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff7eb3, #ff65a3, #7afcff);
+  transition: width 0.3s ease;
+}
