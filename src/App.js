@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
+import Blog from "./blog/Blog";
+
 
 import digitalCamFront from "./assets/digitalCamFrontEdited.png";
 import tamagotchiImg from "./assets/tamagotchiEdited.png";
@@ -15,21 +17,27 @@ import codingMusic from './assets/codingMusic.png'
 
 import DressUpGame from "./components/dressUpGame";
 
+
 function App() {
   const [showBack, setShowBack] = useState(false);
   const handleClick = () => setShowBack(!showBack);
 
+  const [showBlog, setShowBlog] = useState(false);
+  if (showBlog) return <Blog goBack={() => setShowBlog(false)} />;
+
+
   return (
     <div className="container">
       <h1 className="homepage-heading">.𖥔 ݁ Yasmin's tech portfolio ˖ ♡</h1>
-       <h3>Hi! i'm a creative technologist i blend tech, creative design and fashion to build innovative, interactive, and artistic digital experiences for everyone ♡.</h3>
+       <h3>Hi! I'm an AI engineer, coding instructor & creative technologist.</h3>
+       <h3> I love to blend tech, creative design and fashion to build innovative, interactive, and artistic digital experiences for everyone ♡ </h3>
 
       <div className="folder-bar">
         {[
           { href: "#projects", label: "Projects" },
           { href: "#techstack", label: "Tech_Stack & design" },
-          { href: "#teaching", label: "Teaching" },
-          { href: "#extras", label: "Extras" },
+          { href: "#teaching", label: "Teaching Code 🌍" },
+          { href: "#blog", label: "Tech Blog" },
           { href: "#contact", label: "Contact_Me" },
         ].map((item, index) => (
           <div className="folder-icon" key={index}>
@@ -87,27 +95,17 @@ function App() {
         <img src={teachingPost} alt="Teaching blog post" />
       </section>
 
-      <section id="extras">
-        <h2>Extras</h2>
+      <section id="blog">
+        <h2>Tech blog</h2>
         <div className="tamagotchi-extras">
           <img src={tamagotchiImg} alt="Tamagotchi" className="tamagotchi-extras-img" />
           <div className="tamagotchi-extras-screen">
-            <h1>Other technologies/interests I've been looking into</h1>
+           
 
-            <h3>BSC Tech Podcast Episode ⭐</h3>
-            <a
-              href="https://www.bcs.org/articles-opinion-and-research/women-in-software-development/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              💻 Women in software development
-            </a>
-
-            <h3>✨ Digital design ✨</h3>
-            <p>
-              I have been looking into Blender, Krita & Canva in creating digital
-              designs
-            </p>
+            <h3>Blog posts ⭐</h3>
+             <button onClick={() => setShowBlog(true)}>
+              💻 AI Evals, do they even matter?
+            </button>
           </div>
         </div>
       </section>
