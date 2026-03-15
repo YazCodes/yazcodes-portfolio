@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/yazcodes-portfolio/static/css/main.624c4c9d.css",
-    "main.js": "/yazcodes-portfolio/static/js/main.c5de3ee9.js",
+    "main.css": "/yazcodes-portfolio/static/css/main.b682263d.css",
+    "main.js": "/yazcodes-portfolio/static/js/main.92c14cab.js",
     "static/media/thankYou.mp4": "/yazcodes-portfolio/static/media/thankYou.e013f84a3a691d7e380f.mp4",
     "static/media/bow1.png": "/yazcodes-portfolio/static/media/bow1.b3fe867ba7b913bd9559.png",
     "static/media/techProjects.pdf": "/yazcodes-portfolio/static/media/techProjects.4810ab5d8cbdc59ad5a1.pdf",
@@ -29,11 +29,11 @@
     "static/media/pixel-bow.png": "/yazcodes-portfolio/static/media/pixel-bow.98fee406f09534aa2c59.png",
     "static/media/folder.png": "/yazcodes-portfolio/static/media/folder.ce551e94cfb11116b9e5.png",
     "index.html": "/yazcodes-portfolio/index.html",
-    "main.624c4c9d.css.map": "/yazcodes-portfolio/static/css/main.624c4c9d.css.map",
-    "main.c5de3ee9.js.map": "/yazcodes-portfolio/static/js/main.c5de3ee9.js.map"
+    "main.b682263d.css.map": "/yazcodes-portfolio/static/css/main.b682263d.css.map",
+    "main.92c14cab.js.map": "/yazcodes-portfolio/static/js/main.92c14cab.js.map"
   },
   "entrypoints": [
-    "static/css/main.624c4c9d.css",
-    "static/js/main.c5de3ee9.js"
+    "static/css/main.b682263d.css",
+    "static/js/main.92c14cab.js"
   ]
 }
