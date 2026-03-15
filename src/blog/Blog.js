@@ -62,9 +62,8 @@ function Blog({ goBack }) {
                   This process is important because real production data is often messy, nested, or inconsistent. ETL scripts standardise the data so it can be reliably used in automated evaluations, allowing engineers to run tests across thousands of historical examples.
                   Basically, this means teams can compare new prompts or model versions against real user interactions, detect regressions, and measure whether changes actually improve the quality of the AI system.
 
-                  Tech Stack I'm Working With
-                  Most of this work has been focused on building evaluation tooling using:
-
+                  The tech stack I'm currently working with includes:
+              
     </p>
 
 
@@ -95,7 +94,7 @@ function Blog({ goBack }) {
                   
 
     <h2>LLM-Based Evaluations</h2>              
-    <p>This part hasn’t been tackled yet, but it’s definitely on my radar. Some qualities are harder to validate programmatically, such as:</p>
+    <p>Using LLM-as-a-judge! This part hasn’t been tackled yet, but it’s definitely on my radar. Some qualities are harder to validate programmatically, such as:</p>
     <ul>
       <li>Accuracy</li>
       <li>Completeness</li>
@@ -104,7 +103,7 @@ function Blog({ goBack }) {
     </ul> 
              
     <p>
-      This creates a second evaluation layer focused on quality rather than structure.
+      This creates a second evaluation layer focused on quality ⭐ rather than structure.
     </p>
 
     <h2>Using Polars for Evaluation Metrics</h2>
