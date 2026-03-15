@@ -130,6 +130,40 @@ function Blog({ goBack }) {
 
        
       </p>
+
+      <h2>My Key Takeaway So Far </h2>
+
+      <p>
+        
+        One of the biggest things I’ve learned is that AI systems need evaluation infrastructure just as much as traditional software needs testing infrastructure.
+        Without evaluations it becomes very difficult to:
+
+      </p>
+
+      <ul>
+        <li>Safely experiment with prompts and models</li>
+        <li>Detect regressions</li>
+        <li>Maintain consistent output quality</li>
+     </ul> 
+
+     <p>
+      A strong evaluation pipeline enables faster iteration while maintaining reliability, which is essential for building production AI systems 🫡
+       And that’s exactly what I’m excited to keep learning!
+     </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 }
