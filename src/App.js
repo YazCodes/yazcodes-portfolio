@@ -72,10 +72,46 @@ function App() {
         <p>Click <a href="https://github.com/YazCodes?tab=repositories">here</a> to see how i coded this game :) </p>
         <DressUpGame />
       </div>
+     <br>
+    </br>
+      <section id="blog">
+            <h2>Tech blog</h2>
 
-      <section id="projects">
+            <div className="tamagotchi-extras">
+
+              <img
+                src={tamagotchiImg}
+                alt="Tamagotchi"
+                className="tamagotchi-extras-img"
+              />
+
+              <div className="tamagotchi-extras-screen">
+
+              <h3>Blog posts ⭐</h3>
+
+          <button
+            onClick={() => setShowBlog(true)}
+          >
+            💻 AI Evals, do they even matter?
+          </button>
+          <button>
+            <a
+            href="https://www.bcs.org/articles-opinion-and-research/women-in-software-development/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            👩‍💻 Women in Software Development Podcast!
+          </a>
+
+          </button>
+              </div>
+
+            </div>
+    </section>
+    <section id="projects">
         <h2>Dev Projects 📱</h2>
         <p>Explore my <a href="https://github.com/YazCodes?tab=repositories">GITHUB</a> projects & README's ✨</p>
+        <p>Newer projects, <a href="https://github.com/YazCodes/NLP-emotion-journal-tracker">NLP Emotion tracker</a> </p>
         <iframe
           src={`${techProjects}#toolbar=0&navpanes=0&scrollbar=0&view=FitH&zoom=page-width`}
           title="Tech Projects"
@@ -93,22 +129,7 @@ function App() {
       <section id="teaching">
         <h2>Tech Programming Teacher 👩🏽‍🏫</h2>
         <img src={teachingPost} alt="Teaching blog post" />
-      </section>
-
-      <section id="blog">
-        <h2>Tech blog</h2>
-        <div className="tamagotchi-extras">
-          <img src={tamagotchiImg} alt="Tamagotchi" className="tamagotchi-extras-img" />
-          <div className="tamagotchi-extras-screen">
-           
-
-            <h3>Blog posts ⭐</h3>
-             <button onClick={() => setShowBlog(true)}>
-              💻 AI Evals, do they even matter?
-            </button>
-          </div>
-        </div>
-      </section>
+    </section>
 
       <section id="contact">
          <h2>Contact Me! 📧 </h2>

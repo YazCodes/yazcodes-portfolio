@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 body {
   margin: 0;
@@ -170,3 +171,41 @@ a:hover {
   margin-top: 0.5rem; 
 }
 
+.blog {
+  font-family: "Inter", sans-serif;
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  line-height: 1.7;
+}
+
+.blog h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.blog h2 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.blog p {
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+  color: #333;
+  text-align: justify;
+}
+
+.blog ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.blog li {
+  margin-bottom: 8px;
+}
