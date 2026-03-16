@@ -36,7 +36,7 @@ function App() {
         {[
           { href: "#projects", label: "Projects" },
           { href: "#techstack", label: "Tech_Stack & design" },
-          { href: "#teaching", label: "Teaching Code 🌍" },
+          { href: "#teaching", label: "Teaching Code" },
           { href: "#blog", label: "Tech Blog" },
           { href: "#contact", label: "Contact_Me" },
         ].map((item, index) => (
@@ -87,7 +87,7 @@ function App() {
 
               <div className="tamagotchi-extras-screen">
 
-              <h3>Blog posts ⭐</h3>
+              <h3>My Blog posts ⭐</h3>
 
           <button
             onClick={() => setShowBlog(true)}
@@ -102,7 +102,24 @@ function App() {
           >
             👩‍💻 Women in Software Development Podcast!
           </a>
-
+          </button>
+           <button>
+            <a
+            href="https://www.tokyocodingclub.com/blog/the-art-of-logic-why-coding-is-the-new-creative-playground-for-kids/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            👩‍💻 Why Coding Is The New Creative Playground for Young People
+          </a>
+          </button>
+           <button>
+            <a
+            href="https://www.tokyocodingclub.com/blog/dont-fear-the-bots-how-coding-helps-kids-command-the-ai-revolution/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            👩‍💻 Don’t Fear the Bots! How AI will help our young people
+          </a>
           </button>
               </div>
 
