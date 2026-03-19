@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Blog from "./blog/Blog";
-
+import { useEffect } from "react";
 
 import digitalCamFront from "./assets/digitalCamFrontEdited.png";
 import tamagotchiImg from "./assets/tamagotchiEdited.png";
@@ -23,7 +23,16 @@ function App() {
   const handleClick = () => setShowBack(!showBack);
 
   const [showBlog, setShowBlog] = useState(false);
+
+        useEffect(() => {
+      if (window.location.hash === "#blogpage") {
+        setShowBlog(true);
+      }
+    }, []);
+
   if (showBlog) return <Blog goBack={() => setShowBlog(false)} />;
+
+
 
 
   return (
@@ -89,11 +98,14 @@ function App() {
 
               <h3>My Blog posts ⭐</h3>
 
-          <button
-            onClick={() => setShowBlog(true)}
-          >
-            💻 AI Evals, do they even matter?
-          </button>
+              <button
+                  onClick={() => {
+                    window.location.hash = "#blogpage";
+                    setShowBlog(true);
+                  }}
+                >
+              💻 AI Evals, do they even matter?
+            </button>
           <button>
             <a
             href="https://www.bcs.org/articles-opinion-and-research/women-in-software-development/"
