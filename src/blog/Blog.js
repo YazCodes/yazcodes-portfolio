@@ -94,7 +94,9 @@ function Blog({ goBack }) {
                   
 
     <h2>LLM-Based Evaluations</h2>              
-    <p>Using LLM-as-a-judge! This part hasn’t been tackled yet, but it’s definitely on my radar. Some qualities are harder to validate programmatically, such as:</p>
+    <p>Using LLM-as-a-judge ⚖️ This part i'm currently building now (sounds like another blog post incoming!), these evals are great to evaluate the performance of other AI models and 
+      investigate if different models generates the same quality output. 
+      Some qualities are harder to validate programmatically, such as:</p>
     <ul>
       <li>Accuracy</li>
       <li>Completeness</li>
@@ -109,8 +111,10 @@ function Blog({ goBack }) {
     <h2>Using Polars for Evaluation Metrics</h2>
     <p>
 
-                  Another tool I’ve been learning is Polars, a DataFrame library.
-                  I used it to:
+                  Another tool I’ve been learning is Polars, a DataFrame library. Here i can get useful information from all of our user data. This is great to
+                  get an insight on our users, the tool and helps us identify any patterns from the data that we didn't know before. It can help strengthen our user and business needs 
+                  and give us more guidance on how we can continuously improve our AI tools.
+                  I have been using Polars to:
 
     </p>
     <ul>
@@ -121,14 +125,6 @@ function Blog({ goBack }) {
       <li>View sample records</li>
     </ul> 
                   
-
-       <p>
-                 Example insights we can extract include, how many records we have, which columns contain null values and whether data types match expectations just to name a few!
-                  This helps ensure our evaluation datasets are clean and reliable.
-                  Here we can start getting the real information from the data!
-
-       
-      </p>
 
       <h2>My Key Takeaway So Far </h2>
 
@@ -146,8 +142,7 @@ function Blog({ goBack }) {
      </ul> 
 
      <p>
-      A strong evaluation pipeline enables faster iteration while maintaining reliability, which is essential for building production AI systems 🫡
-       And that’s exactly what I’m excited to keep learning!
+      Overall a strong evaluation pipeline enables faster iteration while maintaining reliability, which is essential for building production AI systems 🫡
      </p>
 
 
