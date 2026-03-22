@@ -1,5 +1,3 @@
-import React from "react";
-
 function Blog({ goBack }) {
   return (
     <div className="blog">

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Blog from "./blog/Blog";
+import Blog2 from "./blog/Blog2";
 import { useEffect } from "react";
 
 import digitalCamFront from "./assets/digitalCamFrontEdited.png";
@@ -22,15 +23,23 @@ function App() {
   const [showBack, setShowBack] = useState(false);
   const handleClick = () => setShowBack(!showBack);
 
-  const [showBlog, setShowBlog] = useState(false);
+  const [selectedBlog, setSelectedBlog] = useState(null);
 
-        useEffect(() => {
-      if (window.location.hash === "#blogpage") {
-        setShowBlog(true);
+    useEffect(() => {
+      if (window.location.hash === "#blog1") {
+        setSelectedBlog("blog1");
+      } else if (window.location.hash === "#blog2") {
+        setSelectedBlog("blog2");
+    }
+  }, []);
+
+        if (selectedBlog === "blog1") {
+        return <Blog goBack={() => setSelectedBlog(null)} />;
       }
-    }, []);
 
-  if (showBlog) return <Blog goBack={() => setShowBlog(false)} />;
+      if (selectedBlog === "blog2") {
+        return <Blog2 goBack={() => setSelectedBlog(null)} />;
+      }
 
 
 
@@ -99,9 +108,17 @@ function App() {
               <h3>My Blog posts ⭐</h3>
 
               <button
+                onClick={() => {
+                  window.location.hash = "#blog2";
+                  setSelectedBlog("blog2");
+                }}
+              >
+                ⚖️ Using LLMs as a Judge
+              </button>
+              <button
                   onClick={() => {
                     window.location.hash = "#blogpage";
-                    setShowBlog(true);
+                    setSelectedBlog("blog1");
                   }}
                 >
               💻 AI Evals, do they even matter?
