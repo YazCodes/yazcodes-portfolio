@@ -10,7 +10,7 @@ function Blog2({ goBack }) {
       <h1>Using LLMs as a Judge ⚖️</h1>
 
       <p>
-        LLMs are lowkey the biggest gossipers. They love information, they love to chat and most importantl they love to judge.
+        LLMs are lowkey the biggest gossipers. They love information, they love to chat and most importantly they love to judge.
       </p>
 
       <p>
@@ -28,6 +28,12 @@ function Blog2({ goBack }) {
       <p>
         That said, I don’t rely soley on AI. I always keep a human in the loop (me 👀) to sense-check results and make sure the reasoning actually makes sense.
       </p>
+
+      <p>Plus! I do not like to rely soley on just using one metric in my eval pipeline which is why i also used <strong>ROUGE scoring</strong></p>
+      <ul>
+        <li>ROUGE → "Did the model capture the important phrases?"</li>
+        <li>LLM Judge → "Is this actually a good response?"</li>
+      </ul>
 
       <h2>What is “Using LLMs as a Judge”?</h2>
       <p>
@@ -71,7 +77,7 @@ function Blog2({ goBack }) {
       </p>
 
       <p>
-        User Input → LLM Generation → LLM Judge → Score → Store → Iterate
+        <strong>User Input → LLM Generation → LLM Judge → Score → Store → Iterate</strong>
       </p>
 
       <ul>
@@ -98,52 +104,80 @@ function Blog2({ goBack }) {
 
       <h2>Example: My Evaluation Prompt</h2>
       <SyntaxHighlighter language="javascript" style={oneDark}>
-       {`You are an expert evaluator.
+{`You are an expert evaluator.
 
-        TASK:
-        <task prompt>
+TASK:
+<task prompt>
 
-        USER INPUT:
-        <user data>
+USER INPUT:
+<user data>
 
-        MODEL OUTPUT:
-        <model response>
+MODEL OUTPUT:
+<model response>
 
-        EVALUATION CRITERIA AND WEIGHTS:
+EVALUATION CRITERIA AND WEIGHTS:
 
-        1. Accuracy (Weight: 0.5)
-        - 1 = Incorrect or hallucinated
-        - 3 = Partially correct
-        - 5 = Fully correct
+1. Accuracy (Weight: 0.5)
+- 1 = Incorrect or hallucinated
+- 3 = Partially correct
+- 5 = Fully correct
 
-        2. Completeness (Weight: 0.3)
-        - 1 = Very incomplete
-        - 3 = Partially complete
-        - 5 = Fully complete
+2. Completeness (Weight: 0.3)
+- 1 = Very incomplete
+- 3 = Partially complete
+- 5 = Fully complete
 
-        3. Clarity (Weight: 0.2)
-        - 1 = Hard to understand
-        - 3 = Okay but not great
-        - 5 = Very clear and well structured
+3. Clarity (Weight: 0.2)
+- 1 = Hard to understand
+- 3 = Okay but not great
+- 5 = Very clear and well structured
 
-        INSTRUCTIONS:
-        - Score each criterion from 1–5
-        - Multiply each score by its weight
-        - Calculate weighted final score
-        - Be strict and consistent
+INSTRUCTIONS:
+- Score each criterion from 1–5
+- Multiply each score by its weight
+- Calculate weighted final score
+- Be strict and consistent
 
-        OUTPUT FORMAT (JSON ONLY):
-        {
-        "scores": {
-            "accuracy": <1-5>,
-            "completeness": <1-5>,
-            "clarity": <1-5>
-        },
-        "weighted_score": <0-5>,
-        "reasoning": "<brief explanation>"
-        }`}
-  </SyntaxHighlighter>
-     
+OUTPUT FORMAT (JSON ONLY):
+{
+"scores": {
+  "accuracy": <1-5>,
+  "completeness": <1-5>,
+  "clarity": <1-5>
+},
+"weighted_score": <0-5>,
+"reasoning": "<brief explanation>"
+}`}
+      </SyntaxHighlighter>
+
+
+      <h2>Quick Note on ROUGE</h2>
+
+      <p>
+        ROUGE is a metric used to measure how similar a model’s output is to a reference by checking overlap of words or phrases.
+        It’s useful as a quick baseline to see if key information is being captured.
+      </p>
+
+      <h3>Example</h3>
+      <SyntaxHighlighter language="python" style={oneDark}>
+{`from rouge_score import rouge_scorer
+
+scorer = rouge_scorer.RougeScorer(['rouge2'], use_stemmer=True)
+
+reference = "The cat sat on the mat and looked at the moon"
+prediction = "The cat sat on the mat"
+
+score = scorer.score(reference, prediction)
+print(score['rouge2'].fmeasure)`}
+      </SyntaxHighlighter>
+
+      <h3>Why I Used ROUGE-2</h3>
+      <p>
+        I used ROUGE-2 to evaluate how well different AI models captured specific phrases in our speech to text tool.
+        Since certain phrases are important to detect accurately, ROUGE-2 helped measure not just whether the words appeared,
+        but whether they were captured in the correct sequence.
+      </p>
+
       <h2>Good Practices I’ve Picked Up</h2>
 
       <ul>
