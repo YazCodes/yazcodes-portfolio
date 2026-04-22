@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/yazcodes-portfolio/static/css/main.b682263d.css",
-    "main.js": "/yazcodes-portfolio/static/js/main.026dac33.js",
+    "main.css": "/yazcodes-portfolio/static/css/main.6e1a44ef.css",
+    "main.js": "/yazcodes-portfolio/static/js/main.38b4f162.js",
     "static/media/thankYou.mp4": "/yazcodes-portfolio/static/media/thankYou.e013f84a3a691d7e380f.mp4",
     "static/media/bow1.png": "/yazcodes-portfolio/static/media/bow1.b3fe867ba7b913bd9559.png",
     "static/media/techProjects.pdf": "/yazcodes-portfolio/static/media/techProjects.4810ab5d8cbdc59ad5a1.pdf",
     "static/media/tamagotchiEdited.png": "/yazcodes-portfolio/static/media/tamagotchiEdited.3fefcd4a48d386a43948.png",
     "static/media/gameBackground.png": "/yazcodes-portfolio/static/media/gameBackground.e14c1900e0e0e2717e4e.png",
     "static/media/backDigiCam.png": "/yazcodes-portfolio/static/media/backDigiCam.1403cfc245001b4d110f.png",
+    "static/media/LLM_diagram.jpg": "/yazcodes-portfolio/static/media/LLM_diagram.67352284909312cf452c.jpg",
     "static/media/outfit1.png": "/yazcodes-portfolio/static/media/outfit1.2b6e9cf358afa756e892.png",
     "static/media/outfit2.png": "/yazcodes-portfolio/static/media/outfit2.5f1afe6f6cd0289dca6f.png",
     "static/media/teachingPost.png": "/yazcodes-portfolio/static/media/teachingPost.896d12a5b100c7fc15ea.png",
@@ -29,11 +30,11 @@
     "static/media/pixel-bow.png": "/yazcodes-portfolio/static/media/pixel-bow.98fee406f09534aa2c59.png",
     "static/media/folder.png": "/yazcodes-portfolio/static/media/folder.ce551e94cfb11116b9e5.png",
     "index.html": "/yazcodes-portfolio/index.html",
-    "main.b682263d.css.map": "/yazcodes-portfolio/static/css/main.b682263d.css.map",
-    "main.026dac33.js.map": "/yazcodes-portfolio/static/js/main.026dac33.js.map"
+    "main.6e1a44ef.css.map": "/yazcodes-portfolio/static/css/main.6e1a44ef.css.map",
+    "main.38b4f162.js.map": "/yazcodes-portfolio/static/js/main.38b4f162.js.map"
   },
   "entrypoints": [
-    "static/css/main.b682263d.css",
-    "static/js/main.026dac33.js"
+    "static/css/main.6e1a44ef.css",
+    "static/js/main.38b4f162.js"
   ]
 }
