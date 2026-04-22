@@ -142,20 +142,6 @@ function Blog({ goBack }) {
      <p>
       Overall a strong evaluation pipeline enables faster iteration while maintaining reliability, which is essential for building production AI systems 🫡
      </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
   );
 }

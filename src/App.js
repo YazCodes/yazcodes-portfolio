@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Blog from "./blog/Blog";
 import Blog2 from "./blog/Blog2";
+import Blog3 from "./blog/Blog3";
 import { useEffect } from "react";
 
 import digitalCamFront from "./assets/digitalCamFrontEdited.png";
@@ -25,13 +26,16 @@ function App() {
 
   const [selectedBlog, setSelectedBlog] = useState(null);
 
-    useEffect(() => {
-      if (window.location.hash === "#blog1") {
-        setSelectedBlog("blog1");
-      } else if (window.location.hash === "#blog2") {
-        setSelectedBlog("blog2");
-    }
-  }, []);
+   useEffect(() => {
+  if (window.location.hash === "#blog1") {
+    setSelectedBlog("blog1");
+  } else if (window.location.hash === "#blog2") {
+    setSelectedBlog("blog2");
+  } else if (window.location.hash === "#blog3") {
+    setSelectedBlog("blog3");
+  }
+}, []);
+
 
         if (selectedBlog === "blog1") {
         return <Blog goBack={() => setSelectedBlog(null)} />;
@@ -39,6 +43,11 @@ function App() {
 
       if (selectedBlog === "blog2") {
         return <Blog2 goBack={() => setSelectedBlog(null)} />;
+      }
+
+
+      if (selectedBlog === "blog3") {
+        return <Blog3 goBack={() => setSelectedBlog(null)} />;
       }
 
 
@@ -106,6 +115,14 @@ function App() {
               <div className="tamagotchi-extras-screen">
 
               <h3>My Blog posts ⭐</h3>
+              <button
+                onClick={() => {
+                  window.location.hash = "#blog3";
+                  setSelectedBlog("blog3");
+                }}
+              >
+                LLM's Have Trust Issues Too 😔💔  
+              </button>
 
               <button
                 onClick={() => {
