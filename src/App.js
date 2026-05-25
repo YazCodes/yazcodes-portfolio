@@ -4,6 +4,7 @@ import Blog from "./blog/Blog";
 import Blog2 from "./blog/Blog2";
 import Blog3 from "./blog/Blog3";
 import Blog4 from "./blog/Blog4";
+import Blog5 from "./blog/Blog5"; 
 import { useEffect } from "react";
 
 import digitalCamFront from "./assets/digitalCamFrontEdited.png";
@@ -36,6 +37,8 @@ function App() {
     setSelectedBlog("blog3");
   } else if (window.location.hash === "#blog4") {
     setSelectedBlog("blog4");
+  } else if (window.location.hash === "#blog5") {
+    setSelectedBlog("blog5");
   }
 }, []);
 
@@ -48,15 +51,16 @@ function App() {
         return <Blog2 goBack={() => setSelectedBlog(null)} />;
       }
 
-
       if (selectedBlog === "blog3") {
         return <Blog3 goBack={() => setSelectedBlog(null)} />;
       }
 
-
-
       if (selectedBlog === "blog4") {
         return <Blog4 goBack={() => setSelectedBlog(null)} />;
+      }
+
+      if (selectedBlog === "blog5") {
+        return <Blog5 goBack={() => setSelectedBlog(null)} />;
       }
 
 
@@ -125,6 +129,16 @@ function App() {
               <div className="tamagotchi-extras-screen">
 
               <h3>My Blog posts ⭐</h3>
+
+                <button
+                onClick={() => {
+                  window.location.hash = "#blog5";
+                  setSelectedBlog("blog5");
+                }}
+              >
+                New In! The fashion x AI collab we're all waiting for 🛍️
+              </button>
+
                <button
                 onClick={() => {
                   window.location.hash = "#blog4";
