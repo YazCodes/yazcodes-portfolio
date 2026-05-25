@@ -28,19 +28,28 @@ function App() {
 
   const [selectedBlog, setSelectedBlog] = useState(null);
 
-   useEffect(() => {
-  if (window.location.hash === "#blog1") {
-    setSelectedBlog("blog1");
-  } else if (window.location.hash === "#blog2") {
-    setSelectedBlog("blog2");
-  } else if (window.location.hash === "#blog3") {
-    setSelectedBlog("blog3");
-  } else if (window.location.hash === "#blog4") {
-    setSelectedBlog("blog4");
-  } else if (window.location.hash === "#blog5") {
-    setSelectedBlog("blog5");
-  }
-}, []);
+  const openBlog = (hash, blogKey) => {
+    window.location.hash = hash;
+    setSelectedBlog(blogKey);
+    window.scrollTo(0, 0);
+  };
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    const blogByHash = {
+      "#blog1": "blog1",
+      "#blogpage": "blog1",
+      "#blog2": "blog2",
+      "#blog3": "blog3",
+      "#blog4": "blog4",
+      "#blog5": "blog5",
+    };
+    const blogKey = blogByHash[hash];
+    if (blogKey) {
+      setSelectedBlog(blogKey);
+      window.scrollTo(0, 0);
+    }
+  }, []);
 
 
         if (selectedBlog === "blog1") {
@@ -130,47 +139,22 @@ function App() {
 
               <h3>My Blog posts ⭐</h3>
 
-                <button
-                onClick={() => {
-                  window.location.hash = "#blog5";
-                  setSelectedBlog("blog5");
-                }}
-              >
+                <button onClick={() => openBlog("#blog5", "blog5")}>
                 New In! The fashion x AI collab we're all waiting for 🛍️
               </button>
 
-               <button
-                onClick={() => {
-                  window.location.hash = "#blog4";
-                  setSelectedBlog("blog4");
-                }}
-              >
+               <button onClick={() => openBlog("#blog4", "blog4")}>
                 Can Your LLM know too much? 👀
               </button>
 
-              <button
-                onClick={() => {
-                  window.location.hash = "#blog3";
-                  setSelectedBlog("blog3");
-                }}
-              >
+              <button onClick={() => openBlog("#blog3", "blog3")}>
                 LLM's Have Trust Issues Too 😔💔  
               </button>
 
-              <button
-                onClick={() => {
-                  window.location.hash = "#blog2";
-                  setSelectedBlog("blog2");
-                }}
-              >
+              <button onClick={() => openBlog("#blog2", "blog2")}>
                 ⚖️ Using LLMs as a Judge
               </button>
-              <button
-                  onClick={() => {
-                    window.location.hash = "#blogpage";
-                    setSelectedBlog("blog1");
-                  }}
-                >
+              <button onClick={() => openBlog("#blogpage", "blog1")}>
               💻 AI Evals, do they even matter?
             </button>
           <button>
