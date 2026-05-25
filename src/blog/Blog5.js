@@ -10,7 +10,7 @@ function Blog5({ goBack }) {
       <h1> How More Fashion Brands Can Leverage AI into Their Workflows 🛍️ </h1>
 
         <p>
-            Hot this season! I came away from an AI talk in Tokyo last year asking how fashion and retail can use AI more intelligently inside the workflows they already have, not as a futuristic replacement for creatives in the industry but as a practical way to help teams work faster, make better decisions, and create more value for customers.
+            Hot this season! I came away from shopping this weekend asking how fashion and retail can use AI more intelligently inside the workflows they already have, not as a futuristic replacement for creatives in the industry but as a practical way to help teams work faster, make better decisions, and create more value for customers. Something we all think about while in Zara lol.
         </p>
 
         <p> <b>
