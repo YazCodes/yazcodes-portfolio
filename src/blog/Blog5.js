@@ -110,7 +110,7 @@ function Blog5({ goBack }) {
         </ul>
 
         <p>
-            The big retial giant ASOS is a useful example because it shows what AI adoption looks like inside a real fashion workflow. The company has already upskilled designers in generative AI and used it to speed up visual creation and production processes. That is a strong sign that AI is already moving from theory into day-to-day retail operations.
+            The big retail giant ASOS is a useful example because it shows what AI adoption looks like inside a real fashion workflow. The company has already upskilled designers in generative AI and used it to speed up visual creation and production processes. That is a strong sign that AI is already moving from theory into day-to-day retail operations.
         </p>
 
         <p>
@@ -134,7 +134,7 @@ function Blog5({ goBack }) {
         </p>
 
         <p>
-            It's inevitable that AI will be used more and more in all industries but i propose that we use it too boost efficiency and not stall creativity and let humans spend more time in creating and task computers for the boring automated stuff.
+            It's inevitable that AI will be used more and more in all industries but i propose that we use it to boost efficiency and not stall creativity and let humans spend more time in creating and task computers for the boring automated stuff.
         </p>
 
         <p>
