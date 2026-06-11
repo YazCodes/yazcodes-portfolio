@@ -5,6 +5,7 @@ import Blog2 from "./blog/Blog2";
 import Blog3 from "./blog/Blog3";
 import Blog4 from "./blog/Blog4";
 import Blog5 from "./blog/Blog5"; 
+import Blog6 from "./blog/Blog6";
 import { useEffect } from "react";
 
 import digitalCamFront from "./assets/digitalCamFrontEdited.png";
@@ -43,6 +44,7 @@ function App() {
       "#blog3": "blog3",
       "#blog4": "blog4",
       "#blog5": "blog5",
+      "#blog6": "blog6",
     };
     const blogKey = blogByHash[hash];
     if (blogKey) {
@@ -70,6 +72,10 @@ function App() {
 
       if (selectedBlog === "blog5") {
         return <Blog5 goBack={() => setSelectedBlog(null)} />;
+      }
+
+      if (selectedBlog === "blog6") {
+        return <Blog6 goBack={() => setSelectedBlog(null)} />;
       }
 
 
@@ -138,6 +144,10 @@ function App() {
               <div className="tamagotchi-extras-screen">
 
               <h3>My Blog posts ⭐</h3>
+
+              <button onClick={() => openBlog("#blog6", "blog6")}>
+                There’s No Such Thing as Ethical AI… Right?
+              </button>
 
                 <button onClick={() => openBlog("#blog5", "blog5")}>
                 New In! The fashion x AI collab we're all waiting for 🛍️
